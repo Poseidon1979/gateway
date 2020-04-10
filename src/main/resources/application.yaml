@@ -12,4 +12,4 @@ spring:
         mode: polling
         period: 5000
       discovery:
-        filter: "metadata.labels['s1p']"
+        all-namespaces: true
