@@ -13,3 +13,21 @@ spring:
         period: 5000
       discovery:
         all-namespaces: true
+
+server.port: 8080
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.cloud.loadbalancer: TRACE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      enabled: true
+    restart:
+      enabled: true
+    info:
+      enabled: true
